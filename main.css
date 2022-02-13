@@ -1,0 +1,79 @@
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+    font-family: Helvetica;
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 29.5vh);
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav{
+    flex: 0 0 15vw;
+    background: #FDFAF9;
+  }
+  
+  #main > aside {
+    flex: 0 0 20vw;
+    background: white;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  #header {
+    background: #FDFAF9;
+    height: 15vh;
+    align-items: center;
+  }
+  
+img {
+       display: block;
+  }
+  
+  footer {
+    background: lightgrey;
+    height: 5vh;
+    text-align: right;
+  }
+  
+  a{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  a:hover{
+    background-color: lightgrey;
+    color: black;
+  }
+  
+  /*Paragraf*/
+p {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Rubrik 4*/
+h1 h2 h3 h4 h5 {
+    font-family: Helvetica;
+    font-weight: bold;
+    right: 0px;
+}
+
+/*Dra ihop vid mindre skärm*/
+@media screen and (max-width: 575px) {
+  #main {
+    display: block;
+  }
