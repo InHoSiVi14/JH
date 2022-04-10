@@ -38,13 +38,26 @@
   margin-right: auto;
   width: 50%;
   } 
-  footer {
+
+  .footer {
     background: lightgrey;
     height: 5vh;
-    text-align: right;
+    width: 100vw;
+    display: flex;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer__content-link {
+    text-decoration: none;
+    color: black;
   }
   
-  a{
+  .topNav-link{
     float: left;
     text-align: center;
     text-decoration: none;
@@ -78,3 +91,4 @@ h1 h2 h3 h4 h5 {
   #main {
     display: block;
   }
+}
